@@ -11,4 +11,5 @@ VOLUME /config
 
 EXPOSE 8081
 
+RUN [ "cross-build-end"]
 CMD python /SickBeard/SickBeard.py --datadir /config/data --config /config/config.ini -p 8081 --nolaunch
